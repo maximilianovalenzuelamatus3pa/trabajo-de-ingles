@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    margin: 30px;
+    color: #222;
+}
+
+h1, h2 {
+    color: #000000;
+    text-align: center;
+    margin-top: 35px;
+}
+
+p {
+    color: #000000;
+    text-align: center;
+    font-size: 17px;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto 35px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px #f50000;
+}
+
+th {
+    background-color: #000000;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+}
+
+td {
+    border: 1px solid #ffffff;
+    padding: 9px;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+tr:nth-child(even) {
+    background-color: #e8f0ee;
+}
+
+tr:hover td {
+    background-color: #993030;
+}
+
+footer {
+    margin-top: 55px;
+    padding: 18px 0;
+    text-align: center;
+    color: #555;
+    font-size: 15px;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+    .completo-review {
+        margin: 35px 0;
+        padding: 18px;
+    }
+
+    .completo-photos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .completo-photos figure:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .completo-photos img {
+        height: 150px;
+    }
+}
+
+.completo-review {
+    max-width: 1000px;
+    margin: 55px auto;
+    padding: 28px;
+    background-color: #fff;
+    border-top: 4px solid #993030;
+    box-shadow: 0 4px 10px #d5caca;
+}
+
+.completo-review h2,
+.completo-review p {
+    text-align: left;
+}
+
+.completo-review h2 {
+    margin: 8px 0;
+}
+
+.completo-review .completo-eyebrow {
+    color: #993030;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.completo-review .completo-subtitle {
+    color: #555;
+}
+
+.completo-photos {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 10px;
+    margin: 22px 0;
+}
+
+.completo-photos figure {
+    min-width: 0;
+    margin: 0;
+}
+
+.completo-photos img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.completo-photos figcaption {
+    padding-top: 6px;
+    color: #555;
+    font-size: 12px;
+}
+
+.completo-review-text p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.completo-review .completo-rating {
+    margin-top: 22px;
+    color: #506a42;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .completo-review {
+        margin: 35px 0;
+        padding: 18px;
+    }
+
+    .completo-photos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .completo-photos figure:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .completo-photos img {
+        height: 150px;
+    }
+}
